@@ -5,4 +5,4 @@
 <p>volta</p>
 <p>pnpm</p>
 
-<a href="https://simpletodo-so.netlify.app/">
+<a href="https://simpletodo-so.netlify.app/">デプロイしたサイト</a>
