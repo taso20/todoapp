@@ -29,7 +29,7 @@ export function TodoItem({
         >
             <input
                 type="checkbox"
-                className="mx-2 h-5 w-5"
+                className="mx-2 size-6"
                 checked={todo.completed}
                 onChange={() => onToggle(todo.id)}
             />
@@ -41,7 +41,7 @@ export function TodoItem({
                         maxLength={24}
                         onChange={(e) => onChangeEditingText(e.target.value)}
                         onKeyDown={(e) => e.key === 'Enter' && onSave(todo.id)}
-                        className="h-7 w-full rounded border border-gray-300 focus:border-green-300 focus:outline-none"
+                        className="h-8 w-full rounded border border-gray-300 focus:border-green-300 focus:outline-none"
                     />
                 ) : (
                     <p className={todo.completed ? 'text-gray-500 line-through' : 'text-gray-800'}>
@@ -52,10 +52,23 @@ export function TodoItem({
 
             {editingId === todo.id ? (
                 <button
-                    className="h-7 w-7 rounded bg-green-300 text-white"
+                    className="rounded bg-green-300 p-1 text-white"
                     onClick={() => onSave(todo.id)}
                 >
-                    ✓
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        className="size-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                        />
+                    </svg>
                 </button>
             ) : (
                 <>

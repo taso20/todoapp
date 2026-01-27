@@ -59,7 +59,7 @@ function App() {
                 <div className="flex w-full items-center justify-between rounded bg-blue-300">
                     <ShareButton></ShareButton>
                     <h1 className="p-6 text-center text-3xl font-extrabold text-white">Todo-So</h1>
-                    <img src={logo} alt="" className="m-3 h-14 w-14" />
+                    <img src={logo} alt="" className="m-3 size-14" />
                 </div>
 
                 <TodoList
