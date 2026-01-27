@@ -3,6 +3,7 @@ import type { Todo } from './type/type';
 import { TodoList } from './conponents/TodoList';
 import { TodoForm } from './conponents/TodoForm';
 import logo from './assets/taso20-512.png';
+import { ShareButton } from './conponents/ShareButton';
 
 function App() {
     const [todos, setTodos] = useState<Todo[]>(() => {
@@ -56,6 +57,7 @@ function App() {
         <div className="min-h-screen bg-gray-50">
             <div className="mx-auto max-w-md">
                 <div className="flex w-full items-center justify-between rounded bg-blue-300">
+                    <ShareButton></ShareButton>
                     <h1 className="p-6 text-center text-3xl font-extrabold text-white">Todo-So</h1>
                     <img src={logo} alt="" className="m-3 h-14 w-14" />
                 </div>
