@@ -1,1 +1,16 @@
-@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+@import "tailwindcss";
+
+@layer utilities {
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+}
+
+@theme {
+    --font-zenmaru: "Zen Maru", sans-serif;
+}
