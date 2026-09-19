@@ -3,6 +3,6 @@
 <p>vite</p>
 <p>tailwindcss</p>
 <p>volta</p>
-<p>pnpm</p>
+<p>bun</p>
 
 <a href="https://simpletodo-so.netlify.app/">デプロイしたサイト</a>
